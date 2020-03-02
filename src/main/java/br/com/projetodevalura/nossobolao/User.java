@@ -11,12 +11,12 @@ public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  private @NotBlank @NotNull @Email @Column(unique = true) String login;
-  private @NotBlank @NotNull @Size(min = 6) String password;
+  private @NotBlank @Email @Column(unique = true) String login;
+  private @NotBlank @Size(min = 6) String password;
   @PastOrPresent
   private LocalDateTime createdAt = LocalDateTime.now();
 
-  public User(@NotBlank @Email @NotNull String login, @NotBlank @NotNull @Size(min = 6) String password) {
+  public User(@NotBlank @Email String login, @NotBlank @Size(min = 6) String password) {
     this.login = login;
     this.password = password;
   }

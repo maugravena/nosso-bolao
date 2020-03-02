@@ -7,8 +7,8 @@ import javax.validation.constraints.Size;
 
 public class NewUserForm {
 
-  private @NotBlank @NotNull @Email String login;
-  private @NotBlank @NotNull @Size(min = 6) String password;
+  private @NotBlank @Email String login;
+  private @NotBlank @Size(min = 6) String password;
 
   public String getLogin() {
     return login;
