@@ -21,6 +21,7 @@ public class User {
     this.password = password;
   }
 
+  @Deprecated
   public User() {  }
 
   @Override
