@@ -11,8 +11,10 @@ public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  private @NotBlank @Email @Column(unique = true) String login;
-  private @NotBlank @Size(min = 6) String password;
+  @NotBlank @Email @Column(unique = true)
+  private String login;
+  @NotBlank @Size(min = 6)
+  private String password;
   @PastOrPresent
   private LocalDateTime createdAt = LocalDateTime.now();
 

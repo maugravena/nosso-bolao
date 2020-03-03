@@ -13,8 +13,10 @@ public class Team {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  private @NotBlank @Column(unique = true) String name;
-  private @Past LocalDate foundationDate;
+  @NotBlank @Column(unique = true)
+  private String name;
+  @Past
+  private LocalDate foundationDate;
 
   public Team(@NotBlank String name, @Past LocalDate foundationDate) {
     this.name = name;
