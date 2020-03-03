@@ -5,7 +5,7 @@ import org.springframework.validation.Validator;
 
 import java.util.Optional;
 
-public class NoTeamWithDuplicateNameValidator  implements Validator {
+public class NoTeamWithDuplicateNameValidator implements Validator {
   private TeamRepository teamRepository;
 
   public NoTeamWithDuplicateNameValidator(TeamRepository teamRepository) {
