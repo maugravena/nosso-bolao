@@ -1,4 +1,4 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;

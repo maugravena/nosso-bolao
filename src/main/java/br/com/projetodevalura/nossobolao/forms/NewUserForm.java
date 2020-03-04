@@ -1,4 +1,6 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.forms;
+
+import br.com.projetodevalura.nossobolao.models.User;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

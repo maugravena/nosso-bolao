@@ -1,5 +1,9 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.controllers;
 
+import br.com.projetodevalura.nossobolao.validators.NoChampionshipDuplicateNameValidator;
+import br.com.projetodevalura.nossobolao.forms.NewChampionshipForm;
+import br.com.projetodevalura.nossobolao.models.Championship;
+import br.com.projetodevalura.nossobolao.repositories.ChampionshipRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;

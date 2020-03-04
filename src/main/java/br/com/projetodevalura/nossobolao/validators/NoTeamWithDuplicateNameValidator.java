@@ -1,5 +1,8 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.validators;
 
+import br.com.projetodevalura.nossobolao.forms.NewTeamForm;
+import br.com.projetodevalura.nossobolao.models.Team;
+import br.com.projetodevalura.nossobolao.repositories.TeamRepository;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 

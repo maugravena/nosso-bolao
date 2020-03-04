@@ -1,5 +1,8 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.validators;
 
+import br.com.projetodevalura.nossobolao.forms.NewUserForm;
+import br.com.projetodevalura.nossobolao.models.User;
+import br.com.projetodevalura.nossobolao.repositories.UserRepository;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 

@@ -1,5 +1,6 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.forms;
 
+import br.com.projetodevalura.nossobolao.models.Team;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 

@@ -1,5 +1,6 @@
-package br.com.projetodevalura.nossobolao;
+package br.com.projetodevalura.nossobolao.forms;
 
+import br.com.projetodevalura.nossobolao.models.Championship;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.validation.constraints.FutureOrPresent;
