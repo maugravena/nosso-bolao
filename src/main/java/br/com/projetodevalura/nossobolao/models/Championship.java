@@ -4,6 +4,8 @@ import javax.persistence.*;
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_championship")
@@ -15,11 +17,16 @@ public class Championship {
   @NotBlank @Column(unique = true)
   private String name;
   @FutureOrPresent
-  private LocalDate dateStart;
+  private LocalDate startDate;
+  private Integer numberOfTeams;
+  @ElementCollection
+  private Set<Integer> teams = new HashSet<>();
 
-  public Championship(@NotBlank String name, @FutureOrPresent LocalDate dateStart) {
+  public Championship(@NotBlank String name, @FutureOrPresent LocalDate startDate, Integer numberOfTeams, Set<Integer> teams) {
     this.name = name;
-    this.dateStart = dateStart;
+    this.startDate = startDate;
+    this.numberOfTeams = numberOfTeams;
+    this.teams.addAll(teams);
   }
 
   @Deprecated
@@ -29,7 +36,9 @@ public class Championship {
   public String toString() {
     return "Championship{" +
         "name='" + name + '\'' +
-        ", dateStart=" + dateStart +
+        ", startDate=" + startDate +
+        ", numberOfTeams=" + numberOfTeams +
+        ", teams=" + teams +
         '}';
   }
 }
